@@ -103,3 +103,17 @@ def contar_impares(matriz):
                 contador = contador + 1
     return contador
 print("contar impares", contar_impares(matriz))
+
+
+def sumar_pares(matriz):
+    if not matriz or not matriz[0]:
+        return 0
+    suma = 0
+
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            if matriz[i][j] % 2 == 0:
+                suma += matriz[i][j]
+    return suma
+
+print("sumar pares", sumar_pares(matriz))
