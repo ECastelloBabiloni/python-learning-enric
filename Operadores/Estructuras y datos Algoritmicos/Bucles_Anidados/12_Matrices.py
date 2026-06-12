@@ -144,3 +144,42 @@ def contar_mayores_5(matriz):
     return contador
 
 print("cuenta mayores de 5: ", contar_mayores_5(matriz))
+
+def contar_menores_5(matriz):
+    if not matriz or not matriz[0]:
+        return 0
+    contador = 0
+
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            if matriz[i][j] < 5:
+                contador = contador +1
+    return contador
+
+print("contar menores de 5: ", contar_menores_5(matriz))
+
+def sumar_mayores_5(matriz):
+    if not matriz or not matriz[0]:
+        return 0
+    suma = 0
+
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            if matriz[i][j] > 5:
+                suma += matriz[i][j]
+    return suma
+
+print("sumar mayores de 5: ", sumar_mayores_5(matriz))
+
+def contar_multiplos_3(matriz):
+    if not matriz or not matriz[0]:
+        return 0
+    contador = 0
+
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            if matriz[i][j] % 3 == 0:
+                contador = contador+1
+    return contador
+
+print("contar multiplos de 3: ", contar_multiplos_3(matriz))
