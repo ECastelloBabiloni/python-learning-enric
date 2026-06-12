@@ -117,3 +117,30 @@ def sumar_pares(matriz):
     return suma
 
 print("sumar pares", sumar_pares(matriz))
+
+def sumar_impares(matriz):
+    if not matriz or not matriz[0]:
+        return 0
+    suma = 0
+
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            if matriz[i][j] % 2 != 0:
+                suma += matriz[i][j]
+    return suma
+
+
+print("sumar impares", sumar_impares(matriz))
+
+def conrtar_mayores_5(matriz):
+    if not matriz or not matriz[0]:
+        return 0
+    contador = 0
+
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            if matriz[i][j] > 5:
+                contador = contador +1
+    return contador
+
+print("cuenta mayores de 5: ", conrtar_mayores_5(matriz))
