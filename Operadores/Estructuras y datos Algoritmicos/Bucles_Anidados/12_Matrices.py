@@ -90,3 +90,16 @@ def contar_pares(matriz):
     return contador
 
 print("contar pares", contar_pares(matriz))
+
+
+def contar_impares(matriz):
+    if not matriz or not matriz[0]:
+        return 0
+    contador = 0
+
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            if matriz[i][j] % 2 != 0:
+                contador = contador + 1
+    return contador
+print("contar impares", contar_impares(matriz))
