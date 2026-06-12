@@ -132,7 +132,7 @@ def sumar_impares(matriz):
 
 print("sumar impares", sumar_impares(matriz))
 
-def conrtar_mayores_5(matriz):
+def contar_mayores_5(matriz):
     if not matriz or not matriz[0]:
         return 0
     contador = 0
@@ -143,4 +143,4 @@ def conrtar_mayores_5(matriz):
                 contador = contador +1
     return contador
 
-print("cuenta mayores de 5: ", conrtar_mayores_5(matriz))
+print("cuenta mayores de 5: ", contar_mayores_5(matriz))
