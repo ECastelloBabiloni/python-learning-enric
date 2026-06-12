@@ -46,3 +46,47 @@ mostrar_matriz(matriz)
 print("sumar matriz",sumar_matriz(matriz))
 print("sumar filas",sumar_filas(matriz))
 print("sumar columnas", sumar_columnas(matriz))
+
+
+def primer_elemento(matriz):
+    if not matriz or not matriz[0]:
+        return None
+    
+    return matriz[0][0]
+    
+
+print("primer elemento", primer_elemento(matriz))  # 1
+
+def elemento_central(matriz):
+    if not matriz or not matriz[0]:
+        return None
+    return matriz[1][1]
+
+
+print("elemento central", elemento_central(matriz))
+
+def contar_elementos(matriz):
+    if not matriz or not matriz[0]:
+        return None
+    contador = 0
+
+    for fila in matriz:
+        for numero in fila:
+            contador += 1
+    return contador
+     
+
+print("contar elementos", contar_elementos(matriz))
+
+def contar_pares(matriz):
+    if not matriz or not matriz[0]:
+        return 0
+    contador = 0
+
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            if matriz[i][j] % 2 == 0:
+                contador = contador + 1
+    return contador
+
+print("contar pares", contar_pares(matriz))
