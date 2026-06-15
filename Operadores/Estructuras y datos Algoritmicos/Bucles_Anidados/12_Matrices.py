@@ -207,7 +207,7 @@ def posicion_numero(matriz, objetivo):
         for j in range(len(matriz[i])):
             if matriz[i][j] == objetivo:
                 return i, j
-    return False
+    return None
 
 print("posicion 5:", posicion_numero(matriz, 5))    # (1, 1)
 print("posicion 9:", posicion_numero(matriz, 9))    # (2, 2)
