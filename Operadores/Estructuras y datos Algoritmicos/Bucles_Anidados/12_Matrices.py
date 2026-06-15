@@ -184,3 +184,31 @@ def contar_multiplos_3(matriz):
 
 print("contar multiplos de 3: ", contar_multiplos_3(matriz))
 
+def existe_numero(matriz, objetivo):
+    if not matriz or not matriz[0]:
+        return False
+    
+    
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            if matriz[i][j] == objetivo:
+                return True
+    return False
+
+
+print("¿existe el numero 5? ", existe_numero(matriz, 5))
+print("¿existe el numero 20? ", existe_numero(matriz,20))
+
+def posicion_numero(matriz, objetivo):
+    if not matriz or not matriz[0]:
+        return None
+    
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            if matriz[i][j] == objetivo:
+                return i, j
+    return False
+
+print("posicion 5:", posicion_numero(matriz, 5))    # (1, 1)
+print("posicion 9:", posicion_numero(matriz, 9))    # (2, 2)
+print("posicion 20:", posicion_numero(matriz, 20))  # None
