@@ -183,3 +183,4 @@ def contar_multiplos_3(matriz):
     return contador
 
 print("contar multiplos de 3: ", contar_multiplos_3(matriz))
+
