@@ -223,17 +223,32 @@ def posicion_primer_par(matriz):
                 return i, j
     return None
 
-print("posicicon primer numero par: ", posicion_primer_par(matriz))
+print("posicion primer numero par: ", posicion_primer_par(matriz))
 
-def posicion_primer_mayor_que(matriz, objetivo):
+def posicion_primer_mayor_que(matriz, limite):
     if not matriz or not matriz[0]:
         return None
     
     for i in range(len(matriz)):
         for j in range(len(matriz[i])):
-            if matriz[i][j] > objetivo:
+            if matriz[i][j] > limite:
                 return i, j
     return None
 
 
 print("posicion primer numero mayor de 5: ", posicion_primer_mayor_que(matriz, 5))
+
+def posicion_pares(matriz):
+    if not matriz or not matriz[0]:
+        return None
+    
+    posiciones = []
+
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            if matriz[i][j] % 2 == 0:
+                posiciones.append((i, j))
+    return posiciones
+
+
+print("posicion de los pares: ", posicion_pares(matriz))
