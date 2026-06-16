@@ -238,7 +238,7 @@ def posicion_primer_mayor_que(matriz, limite):
 
 print("posicion primer numero mayor de 5: ", posicion_primer_mayor_que(matriz, 5))
 
-def posicion_pares(matriz):
+def posiciones_pares(matriz):
     if not matriz or not matriz[0]:
         return None
     
@@ -251,4 +251,4 @@ def posicion_pares(matriz):
     return posiciones
 
 
-print("posicion de los pares: ", posicion_pares(matriz))
+print("posiciones de los pares: ", posiciones_pares(matriz))
