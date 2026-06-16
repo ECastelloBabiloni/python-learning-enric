@@ -212,3 +212,16 @@ def posicion_numero(matriz, objetivo):
 print("posicion 5:", posicion_numero(matriz, 5))    # (1, 1)
 print("posicion 9:", posicion_numero(matriz, 9))    # (2, 2)
 print("posicion 20:", posicion_numero(matriz, 20))  # None
+
+def posicion_primer_par(matriz):
+    if not matriz or not matriz[0]:
+        return None
+    
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            if matriz[i][j] % 2 == 0:
+                return i, j
+    return None
+
+print("posicicon primer numero par: ", posicion_primer_par(matriz))
+
