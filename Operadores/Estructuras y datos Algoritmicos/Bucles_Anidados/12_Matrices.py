@@ -225,3 +225,15 @@ def posicion_primer_par(matriz):
 
 print("posicicon primer numero par: ", posicion_primer_par(matriz))
 
+def posicion_primer_mayor_que(matriz, objetivo):
+    if not matriz or not matriz[0]:
+        return None
+    
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            if matriz[i][j] > objetivo:
+                return i, j
+    return None
+
+
+print("posicion primer numero mayor de 5: ", posicion_primer_mayor_que(matriz, 5))
