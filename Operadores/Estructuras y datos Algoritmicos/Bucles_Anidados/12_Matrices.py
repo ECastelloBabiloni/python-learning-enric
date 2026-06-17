@@ -252,3 +252,28 @@ def posiciones_pares(matriz):
 
 
 print("posiciones de los pares: ", posiciones_pares(matriz))
+
+def posiciones_mayores_5(matriz):
+    if not matriz or not matriz[0]:
+        return []
+    posiciones = []
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            if matriz[i][j] > 5:
+                posiciones.append((i, j))
+    return posiciones
+
+print("posiciones mayores de 5: ", posiciones_mayores_5(matriz))
+
+def posiciones_multiplo_3(matriz):
+    if not matriz or not matriz[0]:
+        return []
+    posiciones = []
+
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            if matriz[i][j] % 3 == 0:
+                posiciones.append((i, j))
+    return posiciones
+
+print("Posiciones multiplos de 3: ", posiciones_multiplo_3(matriz))
