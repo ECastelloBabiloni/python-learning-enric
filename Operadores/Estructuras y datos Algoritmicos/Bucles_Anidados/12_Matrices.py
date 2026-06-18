@@ -342,3 +342,34 @@ def encontrar_minimo(matriz):
     return minimo
 
 print("numero minimo es: ", encontrar_minimo(matriz))
+
+def posicion_maximo(matriz):
+    if not matriz or not matriz[0]:
+        return []
+    posicion = (0, 0)
+    maximo = matriz[0][0]
+
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            if matriz[i][j] > maximo:
+                maximo = matriz[i][j]
+                posicion = ((i,j))
+    return posicion
+
+print("la  posicion del valor maximo es: ", posicion_maximo(matriz))
+
+def posicion_minimo(matriz):
+    if not matriz or not matriz[0]:
+        return []
+    
+    posicion = (0, 0)
+    minimo =  matriz[0][0]
+
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            if matriz[i][j] < minimo:
+                minimo =  matriz[i][j]
+                posicion = ((i, j))
+    return posicion
+
+print("la posicion del valor minimo es: ", posicion_minimo(matriz))
