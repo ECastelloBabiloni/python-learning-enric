@@ -290,3 +290,16 @@ def valores_pares(matriz):
     return pares
 
 print("lista de numeros pares: ", valores_pares(matriz))
+
+def valores_mayores_5(matriz):
+    if not matriz or not matriz[0]:
+        return []
+    mayores_5 = []
+
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            if matriz[i][j] > 5:
+                mayores_5.append(matriz[i][j])
+    return mayores_5
+
+print("lista mayores de 5: ", valores_mayores_5(matriz))
