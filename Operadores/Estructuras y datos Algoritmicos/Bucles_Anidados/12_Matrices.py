@@ -277,3 +277,16 @@ def posiciones_multiplo_3(matriz):
     return posiciones
 
 print("Posiciones multiplos de 3: ", posiciones_multiplo_3(matriz))
+
+def valores_pares(matriz):
+    if not matriz or not matriz[0]:
+        return []
+    pares = []
+
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            if matriz[i][j] % 2 == 0:
+                pares.append(matriz[i][j])
+    return pares
+
+print("lista de numeros pares: ", valores_pares(matriz))

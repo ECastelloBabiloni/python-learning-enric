@@ -1,0 +1,93 @@
+# Proyecto objetivo: calculadora de masa de pizza
+
+Este proyecto queda marcado como practica objetivo para aplicar fundamentos de Python en un problema real.
+
+La idea no es hacerlo con ayuda completa de IA, sino llegar al punto en que Enric pueda construir una primera version por si mismo, con revisiones, preguntas y pistas.
+
+## Objetivo de la version 1
+
+Crear una calculadora de consola que reciba datos basicos y devuelva cantidades aproximadas de ingredientes para masa de pizza.
+
+Entradas posibles:
+
+- Numero de pizzas o comensales.
+- Peso deseado por pizza.
+- Porcentaje de hidratacion.
+- Porcentaje de sal.
+- Porcentaje de levadura.
+
+Salidas posibles:
+
+- Harina en gramos.
+- Agua en gramos.
+- Sal en gramos.
+- Levadura en gramos.
+- Peso total aproximado de masa.
+
+## Por que este proyecto es adecuado
+
+Es un proyecto pequeno, pero real.
+
+Permite practicar:
+
+- Variables.
+- Funciones.
+- Parametros y argumentos.
+- Operaciones matematicas.
+- Porcentajes.
+- `return`.
+- Entrada de usuario con `input`.
+- Conversiones con `int` y `float`.
+- Validacion basica de datos.
+- Presentacion clara de resultados.
+- Documentacion en GitHub.
+
+## Condiciones para empezar
+
+No se empezara inmediatamente.
+
+Se empezara cuando Enric tenga suficientemente consolidados estos puntos:
+
+- Escribir funciones simples sin bloquearse.
+- Diferenciar parametro y argumento.
+- Usar `return` con criterio.
+- Usar acumuladores y contadores.
+- Entender condiciones `if`.
+- Hacer calculos con porcentajes.
+- Explicar que datos entran y que datos salen de una funcion.
+
+No hace falta dominar matrices para hacer la calculadora, pero el bloque actual de matrices ayuda a consolidar bucles, funciones y razonamiento.
+
+## Senal para empezar
+
+El profesor avisara con una frase clara:
+
+```text
+El proximo paso es comenzar la calculadora de masa de pizza v1.
+```
+
+Ese aviso llegara cuando los fundamentos previos sean suficientes para que Enric pueda escribir la mayor parte del codigo sin copiar una solucion completa.
+
+## Versiones futuras
+
+### Version 1: consola
+
+- Preguntar datos al usuario.
+- Calcular ingredientes.
+- Mostrar resultado por pantalla.
+
+### Version 2: funciones limpias
+
+- Separar calculos en funciones.
+- Devolver resultados en un diccionario.
+- Agregar pruebas simples con `assert`.
+
+### Version 3: mejora practica
+
+- Guardar recetas.
+- Comparar hidrataciones.
+- Crear perfiles de masa.
+
+### Version 4: interfaz sencilla
+
+- Convertirlo en una pequena app visual o web cuando los fundamentos lo permitan.
