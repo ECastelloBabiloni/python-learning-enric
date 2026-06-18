@@ -316,3 +316,16 @@ def valores_multiplos_3(matriz):
     return multiplos_3
 
 print("lista multiplos de 3: ", valores_multiplos_3(matriz))
+
+def encontrar_maximo(matriz):
+    if not matriz or not matriz[0]:
+        return []
+    maximo = matriz[0][0]
+
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            if matriz[i][j] > maximo:
+                maximo = matriz[i][j]
+    return maximo
+
+print("numero maximo: ", encontrar_maximo(matriz))
