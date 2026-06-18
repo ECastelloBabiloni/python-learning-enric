@@ -329,3 +329,16 @@ def encontrar_maximo(matriz):
     return maximo
 
 print("numero maximo: ", encontrar_maximo(matriz))
+
+def encontrar_minimo(matriz):
+    if not matriz or not matriz[0]:
+        return []
+    minimo = matriz[0][0]
+
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            if matriz[i][j] < minimo:
+                minimo = matriz[i][j]
+    return minimo
+
+print("numero minimo es: ", encontrar_minimo(matriz))
