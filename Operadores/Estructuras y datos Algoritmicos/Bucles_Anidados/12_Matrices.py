@@ -373,3 +373,33 @@ def posicion_minimo(matriz):
     return posicion
 
 print("la posicion del valor minimo es: ", posicion_minimo(matriz))
+
+def maximo_con_posicion(matriz):
+    if not matriz or not matriz[0]:
+        return []
+    posicion = (0, 0)
+    maximo = matriz[0][0]
+
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            if matriz[i][j] > maximo:
+                maximo = matriz[i][j]
+                posicion = ((i, j))
+    return (maximo, posicion)
+
+print("El maximo y su posicion son: ", maximo_con_posicion(matriz))
+
+def minimo_con_posicion(matriz):
+    if not matriz or not matriz[0]:
+        return []
+    posicion = (0, 0)
+    minimo = matriz[0][0]
+
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            if matriz[i][j] < minimo:
+                minimo = matriz[i][j]
+                posicion = ((i, j))
+    return (minimo, posicion)
+
+print("El minimo y su posicion son: ", minimo_con_posicion(matriz))
