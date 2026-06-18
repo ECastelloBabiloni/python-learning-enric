@@ -303,3 +303,16 @@ def valores_mayores_5(matriz):
     return mayores_5
 
 print("lista mayores de 5: ", valores_mayores_5(matriz))
+
+def valores_multiplos_3(matriz):
+    if not matriz or not matriz[0]:
+        return []
+    multiplos_3 = []
+
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            if matriz[i][j] % 3 == 0:
+                multiplos_3.append(matriz[i][j])
+    return multiplos_3
+
+print("lista multiplos de 3: ", valores_multiplos_3(matriz))
