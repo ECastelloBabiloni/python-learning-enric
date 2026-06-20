@@ -2,7 +2,8 @@ pizza = {
     "harina": 500,
     "agua": 325,
     "sal": 12,
-    "hidratacion": 65
+    "hidratacion": 65,
+    "porcentaje_sal": 2.4
 }
 
 print(pizza["harina"])
@@ -24,3 +25,7 @@ def calcular_agua(receta):
 
 print("la cantidad de agua es: ", calcular_agua(pizza))
 
+def calcular_sal(receta):
+    return (receta["harina"]*receta["porcentaje_sal"])/100
+
+print("la cantidad de sal es: ", calcular_sal(pizza))
