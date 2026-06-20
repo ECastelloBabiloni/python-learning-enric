@@ -403,3 +403,13 @@ def minimo_con_posicion(matriz):
     return (minimo, posicion)
 
 print("El minimo y su posicion son: ", minimo_con_posicion(matriz))
+
+matriz_test = [
+    [4, 12, 1],
+    [9, 3, 15],
+    [2, 8, 6]
+]
+
+print("El maximo y su posicion son: ", maximo_con_posicion(matriz_test))
+print("El minimo y su posicion son: ", minimo_con_posicion(matriz_test))
+print("lista de numeros pares: ", valores_pares(matriz_test))
