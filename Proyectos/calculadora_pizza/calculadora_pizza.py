@@ -35,3 +35,11 @@ def calcular_peso_total(receta):
     return receta["harina"]+receta["sal"]+receta["agua"]
 
 print("El peso total de la masa es: ", calcular_peso_total(pizza))
+
+def calcular_harina_desde_total(receta):
+    porcentaje_total = receta["hidratacion"] + 100 + receta["porcentaje_sal"]
+    peso_harina = receta["peso_total"] * 100 /porcentaje_total
+
+    return peso_harina
+
+print("El peso total de la harina es: ", calcular_harina_desde_total(pizza))
