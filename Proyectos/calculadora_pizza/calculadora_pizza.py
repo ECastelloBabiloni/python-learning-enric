@@ -43,3 +43,10 @@ def calcular_harina_desde_total(receta):
     return peso_harina
 
 print("El peso total de la harina es: ", calcular_harina_desde_total(pizza))
+
+def calcular_agua_desde_el_total(receta):
+    harina = calcular_harina_desde_total(receta)
+    agua = harina * receta["hidratacion"] / 100
+    return agua
+
+print("cantidad de agua totoal es: ", calcular_agua_desde_el_total(pizza))
