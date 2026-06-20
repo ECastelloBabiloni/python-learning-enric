@@ -87,3 +87,5 @@ receta_usuario ={
     "hidratacion": hidratacion,
     "porcentaje_sal": porcentaje_sal
 }
+
+print("receta calculada",calcular_receta_desde_total(receta_usuario))
