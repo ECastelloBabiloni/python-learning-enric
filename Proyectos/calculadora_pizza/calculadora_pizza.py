@@ -13,6 +13,7 @@ def calcular_hidratacion(receta):
 
 print("la hidratacion es: ", calcular_hidratacion(pizza))
 
-
-
-
+def calcular_porcentaje_sal(receta):
+    return (receta["sal"]/receta["harina"])*100
+    
+print("el porcentaje de sal es: ", calcular_porcentaje_sal(pizza))
