@@ -3,7 +3,8 @@ pizza = {
     "agua": 325,
     "sal": 12,
     "hidratacion": 65,
-    "porcentaje_sal": 2.4
+    "porcentaje_sal": 2.4,
+    "peso_total": 837
 }
 
 print(pizza["harina"])
