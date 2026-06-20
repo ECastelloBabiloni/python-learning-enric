@@ -49,4 +49,4 @@ def calcular_agua_desde_el_total(receta):
     agua = harina * receta["hidratacion"] / 100
     return agua
 
-print("cantidad de agua totoal es: ", calcular_agua_desde_el_total(pizza))
+print("cantidad de agua total es: ", calcular_agua_desde_el_total(pizza))
