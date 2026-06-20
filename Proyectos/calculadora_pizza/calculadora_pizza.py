@@ -29,3 +29,8 @@ def calcular_sal(receta):
     return (receta["harina"]*receta["porcentaje_sal"])/100
 
 print("la cantidad de sal es: ", calcular_sal(pizza))
+
+def calcular_peso_total(receta):
+    return receta["harina"]+receta["sal"]+receta["agua"]
+
+print("El peso total de la masa es: ", calcular_peso_total(pizza))
