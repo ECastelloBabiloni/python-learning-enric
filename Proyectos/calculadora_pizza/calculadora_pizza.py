@@ -50,3 +50,10 @@ def calcular_agua_desde_el_total(receta):
     return agua
 
 print("cantidad de agua total es: ", calcular_agua_desde_el_total(pizza))
+
+def calcular_sal_desde_total(receta):
+    harina = calcular_harina_desde_total(receta)
+    sal = harina * receta["porcentaje_sal"] / 100
+    return sal
+
+print("calcula la sal teniendo en cuenta el total: ", calcular_sal_desde_total(pizza))
