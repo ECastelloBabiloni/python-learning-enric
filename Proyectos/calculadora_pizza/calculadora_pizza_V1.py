@@ -36,13 +36,18 @@ hidratacion = int(input("Hidratacion: "))
 peso_total = peso_por_persona * comensales
 
 
-print("Peso total de la masa: ",peso_total)
+print("Peso total de la masa: ", peso_total, "g")
 
 
-receta_usuario ={
+receta_usuario = {
     "peso_total": peso_total,
     "hidratacion": hidratacion,
     "porcentaje_sal": porcentaje_sal
 }
 
-print("Receta calculada: ",calcular_receta_desde_total(receta_usuario))
+
+receta_calculada = calcular_receta_desde_total(receta_usuario)
+
+print("Harina:", round(receta_calculada["harina"]), "g")
+print("Agua:", round(receta_calculada["agua"]), "g")
+print("Sal:", round(receta_calculada["sal"]), "g")
