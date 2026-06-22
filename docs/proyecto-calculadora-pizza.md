@@ -76,6 +76,20 @@ Ese aviso llegara cuando los fundamentos previos sean suficientes para que Enric
 - Calcular ingredientes.
 - Mostrar resultado por pantalla.
 
+### Version 1.1: consola con valor por defecto
+
+- Permitir hidratacion por defecto.
+- Mostrar la hidratacion usada en la salida.
+
+### Version 1.2: cierre de practica actual
+
+Antes de pausar el proyecto, se podran hacer una o dos mejoras pequenas:
+
+- Validacion basica de entradas.
+- Peso por persona opcional o configurable.
+
+Despues de eso, conviene pausar el proyecto y volver a fundamentos/Java para preparar DAM.
+
 ### Version 2: funciones limpias
 
 - Separar calculos en funciones.
@@ -91,3 +105,42 @@ Ese aviso llegara cuando los fundamentos previos sean suficientes para que Enric
 ### Version 4: interfaz sencilla
 
 - Convertirlo en una pequena app visual o web cuando los fundamentos lo permitan.
+
+## Decision de ruta
+
+La calculadora de pizza es util para aprender porque obliga a practicar:
+
+- Funciones.
+- Diccionarios.
+- Inputs.
+- Valores por defecto.
+- Calculos reales.
+- Flujo de programa.
+- GitHub y documentacion.
+
+Pero no conviene convertirla todavia en una aplicacion movil completa.
+
+Objetivo actual:
+
+```text
+Cerrar V1.1 y, como mucho, una V1.2 pequena.
+```
+
+Despues:
+
+```text
+Volver a fundamentos y empezar Java para preparar DAM.
+```
+
+Objetivo futuro:
+
+```text
+Convertir la calculadora en una app usable en movil o tablet Android.
+```
+
+Ese objetivo se retomara mas adelante, cuando haya mas base. Posibles caminos futuros:
+
+- App Android con Java/Kotlin.
+- Web app o PWA usable desde el movil.
+
+Por ahora, la prioridad no es empaquetar la app, sino entender bien la logica.

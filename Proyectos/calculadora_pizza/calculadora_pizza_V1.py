@@ -27,7 +27,15 @@ def calcular_receta_desde_total(receta):
 
 # Configuracion y entrada de usuario
 
-peso_por_persona = 320
+entrada_peso = input("Peso por persona [320]: ")
+
+if entrada_peso == (""):
+    peso_por_persona = 320
+else:
+    peso_por_persona = int(entrada_peso)
+
+
+
 porcentaje_sal = 2.4
 
 comensales = int(input("Numero de comensales: "))
