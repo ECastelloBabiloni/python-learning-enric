@@ -31,7 +31,12 @@ peso_por_persona = 320
 porcentaje_sal = 2.4
 
 comensales = int(input("Numero de comensales: "))
-hidratacion = int(input("Hidratacion: "))
+
+entrada_hidratacion = input("Hidratacion [70]: ")
+if entrada_hidratacion == "":
+    hidratacion = 70
+else:
+    hidratacion = int(entrada_hidratacion)
 
 peso_total = peso_por_persona * comensales
 
@@ -48,6 +53,7 @@ receta_usuario = {
 
 receta_calculada = calcular_receta_desde_total(receta_usuario)
 
+print("Hidratación: ", hidratacion, "%")
 print("Harina:", round(receta_calculada["harina"]), "g")
 print("Agua:", round(receta_calculada["agua"]), "g")
 print("Sal:", round(receta_calculada["sal"]), "g")
