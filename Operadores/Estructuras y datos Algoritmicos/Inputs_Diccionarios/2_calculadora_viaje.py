@@ -11,4 +11,4 @@ else:
 litros_consumidos = kilometros * consumo / 100
 coste_combustible = litros_consumidos * precio_litro
 
-print("El precio del combustible consumido es: ", coste_combustible,"Euros")
+print("El precio del combustible consumido es: ", round(coste_combustible, 2),"Euros")
