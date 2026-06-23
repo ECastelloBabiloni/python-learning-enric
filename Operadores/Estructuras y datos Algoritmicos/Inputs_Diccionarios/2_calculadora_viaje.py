@@ -11,4 +11,5 @@ else:
 litros_consumidos = kilometros * consumo / 100
 coste_combustible = litros_consumidos * precio_litro
 
+print("Litros consumidos:", litros_consumidos)
 print("El precio del combustible consumido es: ", round(coste_combustible, 2),"Euros")
