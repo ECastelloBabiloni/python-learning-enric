@@ -13,4 +13,11 @@ def revisar_mayor_importe(productos):
         if importe > importe_mas_caro:
             importe_mas_caro =  importe
             producto_mas_caro = producto["nombre"]
-    return producto_mas_caro, importe_mas_caro
+
+    caro ={
+        "Nombre del producto mas caro": producto_mas_caro,
+        "Importe del producto": importe_mas_caro
+    }
+    return caro
+
+print(revisar_mayor_importe(productos))
